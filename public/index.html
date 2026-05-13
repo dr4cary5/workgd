@@ -3,52 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShadowX Gateway</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background: #0a0a0a;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .status-card {
-            background: #111;
-            border: 1px solid #333;
-            border-radius: 20px;
-            padding: 3rem;
-            max-width: 500px;
-        }
-        h1 {
-            color: #8a2be2;
-            font-size: 2.5rem;
-            margin: 0 0 1rem;
-            letter-spacing: 2px;
-        }
-        p {
-            color: #888;
-            line-height: 1.6;
-        }
-        .badge {
-            display: inline-block;
-            background: #1a1a1a;
-            color: #6e00ff;
-            padding: 0.5rem 1.5rem;
-            border-radius: 20px;
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            border: 1px solid #6e00ff;
-        }
-    </style>
+    <title>ShadowX - Development Environment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="status-card">
-        <h1>🕶️ ShadowX</h1>
-        <p>Gateway is active and running on Vercel Edge Network.</p>
-        <span class="badge">shadowx.work.gd</span>
+    <nav>
+        <div class="logo">🕶️ ShadowX</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="docs.html">Docs</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>ShadowX</h1>
+        <p>A personal staging environment for testing Vercel serverless functions and edge network behavior.</p>
+        <span class="badge">🟢 Active Development</span>
+        <span class="badge">⚡ Vercel Edge</span>
+        <span class="badge">🔧 Serverless</span>
+
+        <h2>Quick Start</h2>
+        <pre><code>git clone https://github.com/dr4cary5/shadowx.git
+cd shadowx
+npm install
+vercel dev</code></pre>
+
+        <h2>Features</h2>
+        <div class="card"><h3>⚡ Serverless Architecture</h3><p>Built on Vercel's serverless platform with zero infrastructure management.</p></div>
+        <div class="card"><h3>🌍 Global Edge Network</h3><p>Automatic deployment to Vercel's edge nodes worldwide for minimal latency.</p></div>
+        <div class="card"><h3>🔒 Automatic SSL</h3><p>TLS certificates provisioned and renewed automatically by Vercel.</p></div>
     </div>
+
+    <footer>
+        <p>© 2026 <a href="https://github.com/dr4cary5">dr4cary5</a> · ShadowX · Powered by Vercel</p>
+    </footer>
 </body>
 </html>
